@@ -1,0 +1,54 @@
+[2024-11-22T11:20:03.516Z] ERROR: {
+  "status": 401,
+  "message": {
+    "message": "Unauthorized"
+  },
+  "fullError": {
+    "message": "Request failed with status code 401",
+    "name": "AxiosError",
+    "stack": "AxiosError: Request failed with status code 401\n    at settle (D:\\Codes\\POCs\\TranslateAPI\\node_modules\\axios\\dist\\node\\axios.cjs:2019:12)\n    at IncomingMessage.handleStreamEnd (D:\\Codes\\POCs\\TranslateAPI\\node_modules\\axios\\dist\\node\\axios.cjs:3135:11)\n    at IncomingMessage.emit (node:events:529:35)\n    at endReadableNT (node:internal/streams/readable:1400:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (D:\\Codes\\POCs\\TranslateAPI\\node_modules\\axios\\dist\\node\\axios.cjs:4287:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async getPatientDemographics (D:\\Codes\\POCs\\TranslateAPI\\document.js:55:26)\n    at async D:\\Codes\\POCs\\TranslateAPI\\document.js:80:18",
+    "config": {
+      "transitional": {
+        "silentJSONParsing": true,
+        "forcedJSONParsing": true,
+        "clarifyTimeoutError": false
+      },
+      "adapter": [
+        "xhr",
+        "http",
+        "fetch"
+      ],
+      "transformRequest": [
+        null
+      ],
+      "transformResponse": [
+        null
+      ],
+      "timeout": 0,
+      "xsrfCookieName": "XSRF-TOKEN",
+      "xsrfHeaderName": "X-XSRF-TOKEN",
+      "maxContentLength": -1,
+      "maxBodyLength": -1,
+      "env": {},
+      "headers": {
+        "Accept": "*/*",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzUxMiIsImtpZCI6ImE3MTAxOTEyLTZmYmMtNDJlMy1hYWQ1LWZhNTJiYWM5MWQzMyIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9vYXBpLnNhbmRib3guYXdzLnplc3R5LmNvLnVrL3B1YmxpYy9pemdfcGFzMS9zZW5kTm90aWZpY2F0aW9uIl0sImNsaWVudF9pZCI6IjJkYjBjM2Y5LTIxNDgtNGUwZC05ZTkwLTBiM2YyZTdhNjNmYyIsImV4cCI6MTczMjI3NTAwMywiZXh0Ijp7fSwiaWF0IjoxNzMyMjc0NDAzLCJpc3MiOiJodHRwczovL29hcGkuc2FuZGJveC5hd3MuemVzdHkuY28udWsiLCJqdGkiOiI2YzFlNGE1MC1lYjk2LTQ1ZWUtOWZlZS1hNTJlMWM1OTgxMzIiLCJuYmYiOjE3MzIyNzQ0MDMsInNjcCI6W10sInN1YiI6IjJkYjBjM2Y5LTIxNDgtNGUwZC05ZTkwLTBiM2YyZTdhNjNmYyJ9.f4Kh-RcuH576FIgVUAdp0FyrtnBdpObx_gmZHxkrNZR9qJyRXB2ujIwuw1zr801ogsvet73_BlKXnrPQ4ivq2h5P2hdKKm5kFN05L_QmlGwFbjt375-tXZ2foRrrHpVX_iCw8mA69yExs5pdImUq21l3T6ixU1pxJrEU4X8d-O2YJkcM7PqsT46d5yAF8WJDoMx3j_dRZl6RRlVXMZMBqBZvuF_gy0pl4NT-SpBvwaZ1fRfy6bU09rvIqTjX3MYPX7xy-VblrJB3gK2NLt5sIn1WnrfndxIF-Wa3jIf2SYjMwfgx-as7yZsyX57poF_7-mopoCFO9vF9hzVKN7VKTL3mysZBiIfb_vY076amzdQvidHrdhyxcru64-d2IndPeIHiDour_vY-mNvkepE_BXUinth83OGQZThRWTKYcamKpTqDlpf9tKJhyUIsqDnv_NgSNNlfNwZ7ZiLU7jDethv9BvbNlezb9NkPh1vHbcxB0XX9SH8ZQLD1xbEwBPKW3jrZAcDxm9nR0vqAOzWhcLW607cN7nhaCE8JdjFxsFiX1fQImKSAZN9yQBNdxo49UIqsHzW7DvCT526-1PBQDZ2nEYtOKNkO0bacMGuDTQvpW1Pv5E9NXZ63Fp-aF4CfCwOd3_pbNU3RNdFRGyw2Wyd8lUMOeVTl20gQrh2I7lI",
+        "x-correlation-id": "f071ce30-37a4-403d-a435-0defc7f662e1",
+        "User-Agent": "axios/1.7.7",
+        "Content-Length": "4",
+        "Accept-Encoding": "gzip, compress, deflate, br"
+      },
+      "params": {
+        "nhsNumber": "1727784804",
+        "MRN": "20241001121328718",
+        "DoB": "1985-10-01"
+      },
+      "method": "post",
+      "url": "https://oapi.sandbox.aws.zesty.co.uk/public/izg_pas1/getPatientDem",
+      "data": "null"
+    },
+    "code": "ERR_BAD_REQUEST",
+    "status": 401
+  }
+}
